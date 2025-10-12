@@ -115,9 +115,4 @@ t-тест: p-value = 1.73e-20 ✅
 Инструменты: Jupyter Notebook, Excel
 
 python
-# Использованные библиотеки
-import pandas as pd
-import scipy.stats as st
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+# Использованные библиотеки pandas, scipy.stats, numpy, matplotlib.pyplot, seaborn
