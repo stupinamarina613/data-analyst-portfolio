@@ -125,7 +125,7 @@ import seaborn as sns
 ab_test_analysis.ipynb - основной ноутбук с анализом
 
 ab_test_results.xlsx - детальная разбивка по торговым точкам
-
+###
 business_calculator.xlsx - калькулятор для оценки экономического эффекта
 
 presentation.pptx - презентация для руководства
