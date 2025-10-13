@@ -113,10 +113,3 @@ t-тест: p-value = 1.73e-20 ✅
 Бизнес-метрики: конверсия, средний чек, прогноз выручки
 
 Инструменты: Jupyter Notebook, Excel
-
-# Использованные библиотеки
-import pandas as pd
-import scipy.stats as st
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
