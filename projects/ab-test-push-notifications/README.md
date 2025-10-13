@@ -30,7 +30,6 @@ t-тест: p-value = 3.32e-21 ✅
 
 # Проверка значимости различий в конверсии
 t-тест: p-value = 1.73e-20 ✅
-
 3. Сегментационный анализ по городам
 Города с положительным эффектом:
 Москва: +19.2% к среднему чеку (1,986 → 2,368 руб.), +5.4% к конверсии
@@ -113,3 +112,11 @@ t-тест: p-value = 1.73e-20 ✅
 Бизнес-метрики: конверсия, средний чек, прогноз выручки
 
 Инструменты: Jupyter Notebook, Excel
+
+python
+# Использованные библиотеки
+import pandas as pd
+import scipy.stats as st
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
