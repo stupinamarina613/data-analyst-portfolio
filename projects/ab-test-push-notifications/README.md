@@ -108,15 +108,6 @@ t-тест: p-value = 1.73e-20 ✅
 ### Инструменты:
 - Jupyter Notebook, Excel
 
-```python
-# Использованные библиотеки
-import pandas as pd
-import scipy.stats as st
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-```
-
 ### Файлы проекта
 - ab_test_analysis.ipynb - основной ноутбук с анализом
 - ab_test_results.xlsx - детальная разбивка по торговым точкам
