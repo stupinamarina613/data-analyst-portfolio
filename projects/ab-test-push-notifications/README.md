@@ -51,6 +51,7 @@ t-тест: p-value = 1.73e-20 ✅
 Города с нейтральным результатом:
 Красноярск, Мурманск, Казань, Саратов, Тольятти, Краснодар, Сахалинск, Дмитров - без статистически значимых различий
 
+```markdown
 ## 4. Анализ торговых точек
 Проанализировано 51 торговая точка
 
@@ -107,6 +108,15 @@ t-тест: p-value = 1.73e-20 ✅
 
 ### Инструменты:
 - Jupyter Notebook, Excel
+
+```python
+# Использованные библиотеки
+import pandas as pd
+import scipy.stats as st
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
 
 ### Файлы проекта
 - ab_test_analysis.ipynb - основной ноутбук с анализом
