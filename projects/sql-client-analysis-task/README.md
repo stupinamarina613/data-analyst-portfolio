@@ -12,6 +12,7 @@ WHERE name_region = 'Поволжье'
 GROUP BY day_pay
 ORDER BY day_pay;
 
+
 -- Задание 2.2: Доля мужчин по городам
 Select    name_city 
 	 , sum(case when gender = 'М' then 1.0 else 0.0 end)/ count(*) as share_men
@@ -21,6 +22,7 @@ from client_info t1
 where age >= 20  and age <= 40
 group by name_city;
 
+
 -- Задание 2.3: Средний возраст неактивных клиентов
 SELECT AVG(age) as avg_age
 FROM client_info
@@ -28,6 +30,7 @@ WHERE id_client NOT IN (SELECT DISTINCT id_client
           FROM payments 
           WHERE amt_payment > 0
           );
+
 
 -- Задание 2.4: Первые три платежа по округам
 SELECT name_region
@@ -43,6 +46,7 @@ FROM (SELECT t3.name_region
 	  ) ranked_payments
 WHERE payment_rank <= 3
 ORDER BY name_region, time_payment;
+
 
 -- Задание 2.5: Среднее время между платежами
 WITH payment_diffs AS (SELECT  t3.name_city
@@ -63,6 +67,7 @@ FROM payment_diffs
 WHERE time_diff_seconds IS NOT NULL AND time_diff_seconds > 0
 GROUP BY name_city
 ORDER BY name_city;
+
 3. Файл create_tables.sql - для тестирования:
 sql
 -- Пример структуры таблиц для тестирования запросов
